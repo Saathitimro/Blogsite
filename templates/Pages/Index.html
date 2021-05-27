@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block 'content' %}
+
+    <div class="tabcontent" id="home">
+
+        <div id="first-info">
+            <img src="{% static 'img/work together.jpg' %}" alt="background" id="underlayimg">
+            <div id="overlay-screen" class="overlay">
+                <h1>Announcements</h1>
+                <ol style="color: white;">
+                    <li>We post blogs about your stories</li>
+                    <li>Bla bla</li>
+                    <li>Bla bla</li>
+                    <li>Bla bla</li>
+                    <li>Bla bla</li>
+                </ol>
+            </div>
+            <div id="overlay-screen" class="overlay">
+                <h1>SaathiTimro</h1>
+                <span>
+                    <a>Become Volunteer</a>
+                </span>
+            </div>
+        </div>
+
+        <div id="second-info">
+            <h2 style="text-align: center;"> Our Services </h2>
+            <a href="blog">
+                <i class="fas fa-align-left fa-3x"></i>Blogs<sup>111</sup> 
+            </a>
+            <a href=""><i class="fas fa-hands-helping fa-3x"></i> Volunteers<sup>111</sup></a>
+            <a href=""><i class="fas fa-calendar fa-3x"></i> Notice </a>
+            <a href=""><i class="fas fa-address-book fa-3x"></i>RequestSession<sup style="width: auto; padding: 5px;">Soon</sup></a>
+        </div>
+
+        <div id="third-info">
+            <img src="{% static 'img/helpother.jpg' %}" id="third-info-img">
+            <p class="motivational-speech">Part of being a person is about helping others. <br/></p>
+            <div class="content">
+
+                <div class="blog-container">
+                        <div class="blog">
+                            <h2 class="blog-title">Bisadh is secretly</h2>
+                            <h5 class="blog-author">By, Bisadh kadel</h5>
+                            <img src="{% static 'img/bgimg.jpg' %}" alt="hello" class="body-img">
+                            <p class="blog-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.<br/> <a href="details" class="redirect-button">Read more</a> </p>
+                        </div>  
+                </div>
+                <div class="blog-container">
+                        <div class="blog">
+                            <h2 class="blog-title">Bisadh is secretly</h2>
+                            <h5 class="blog-author">By, Bisadh kadel</h5>
+                            <img src="{% static 'img/bgimg.jpg' %}" alt="hello" class="body-img">
+                            <p class="blog-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.<br/> <a href="details" class="redirect-button">Read more</a> </p>
+                        </div>  
+                </div>
+                <div class="blog-container">
+                        <div class="blog">
+                            <h2 class="blog-title">Bisadh is secretly</h2>
+                            <h5 class="blog-author">By, Bisadh kadel</h5>
+                            <img src="{% static 'img/bgimg.jpg' %}" alt="hello" class="body-img">
+                            <p class="blog-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.<br/> <a href="details" class="redirect-button">Read more</a> </p>
+                        </div>  
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+{% endblock %}
