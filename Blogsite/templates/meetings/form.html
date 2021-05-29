@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<form class="request-form" action="#" method="POST">
+		{% csrf_token%}
+		Name:<input type ="text" name="name">
+		E-mail:<input type="email" name="email">
+		age:<input type="text" name="age">
+		sex:<input type="text" name="sex">
+		<input type="submit">
+	</form>
+</body>
+</html>

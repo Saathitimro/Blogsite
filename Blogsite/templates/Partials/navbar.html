@@ -1,0 +1,36 @@
+ <!--header and navigation bar-->
+{% load static %}
+ <header>
+            <div class="container">
+                <div class="d-flex space-between align-items-center">
+                    <div class="social-links">
+                        <ul class="d-flex" id="socials">
+                            <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram fa-lg"></i> </a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-container">
+                        <a class="logo" href="#">Saathi<span>Timro</span></a>
+                    </div>
+                    <div class="info">
+                        <ul class="d-flex" id="contacts">
+                            <li>
+                            	<a href="#"><i class="fas fa-phone-alt"></i> 9860477627</a>
+                            </li>
+                            <li>
+                            	<a  href="#"><i class="fa fa-envelope"></i> blabla@gmail.com</a>
+                        	</li>
+                        </ul>
+                    </div>
+                </div>
+                <nav>
+                	<button onclick="showOption()" class="displayOption"> <i class="fas fa-align-justify fa-2x"></i> </button>
+                    <ul class="d-flex justify-content-center" id="option">
+                        <li id="list-item"><a href="home">Home</a></li>
+                        <li id="list-item"><a href="blog">Blogs</a></li>
+                        <li id="list-item"><a href="ContactUs">Contact Us</a></li>
+                        <li id="list-item"><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
