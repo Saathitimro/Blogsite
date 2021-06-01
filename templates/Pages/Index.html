@@ -40,41 +40,19 @@
             <img src="{% static 'img/helpother.jpg' %}" id="third-info-img">
             <p class="motivational-speech">Part of being a person is about helping others. <br/></p>
             <div class="content">
-
+            {% for blogs in blogs %}
                 <div class="blog-container">
                         <div class="blog">
-                            <h2 class="blog-title">Bisadh is secretly</h2>
+                            <h2 class="blog-title"> {{ blogs.title }}</h2>
                             <h5 class="blog-author">By, Bisadh kadel</h5>
-                            <img src="{% static 'img/bgimg.jpg' %}" alt="hello" class="body-img">
-                            <p class="blog-content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.<br/> <a href="details" class="redirect-button">Read more</a> </p>
+                            <img src="{{ blogs.image }}" alt="hello" class="body-img">
+                            <p class="blog-content"> {{ blogs.summery}}
+                                <br/> <a href="details" class="redirect-button">Read more</a> </p>
                         </div>  
                 </div>
-                <div class="blog-container">
-                        <div class="blog">
-                            <h2 class="blog-title">Bisadh is secretly</h2>
-                            <h5 class="blog-author">By, Bisadh kadel</h5>
-                            <img src="{% static 'img/bgimg.jpg' %}" alt="hello" class="body-img">
-                            <p class="blog-content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.<br/> <a href="details" class="redirect-button">Read more</a> </p>
-                        </div>  
-                </div>
-                <div class="blog-container">
-                        <div class="blog">
-                            <h2 class="blog-title">Bisadh is secretly</h2>
-                            <h5 class="blog-author">By, Bisadh kadel</h5>
-                            <img src="{% static 'img/bgimg.jpg' %}" alt="hello" class="body-img">
-                            <p class="blog-content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.<br/> <a href="details" class="redirect-button">Read more</a> </p>
-                        </div>  
-                </div>
+            {% endfor %}
             </div>
         </div>
-
-
     </div>
 
 {% endblock %}

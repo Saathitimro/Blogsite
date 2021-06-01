@@ -3,24 +3,16 @@
 
 {% block 'content' %}
 	<div class="blog-post-container" id="Blog">
+		{% for blogs in blogs %}
 		<div class="blog-post">
-			<img src="{% static 'img/logo.jpg' %}" alt="blog-img">
+			<img src="{{ blogs.image }}" alt="blog-img">
 			<div class="blog-post-items">
-				<h3 class="blog-post-title">Bisadh is secretly</h3>
+				<h3 class="blog-post-title">{{ blogs.title }}</h3>
 				<h4 class="blog-post-author">By, Bisadh Kadel</h4>
-				<p class="blog-post-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/><a class="redirect-button" href="details">ReadMore</a> 
+				<p class="blog-post-content">{{ blogs.summery }}<br/><a class="redirect-button" href="details">ReadMore</a> 
 				</p>
 			</div>
 		</div>
-
-		<div class="blog-post">
-			<img src="img/logo.jpg" alt="blog-img">
-			<div class="blog-post-items">
-				<h3 class="blog-post-title">Bisadh is secretly</h3>
-				<h4 class="blog-post-author">By, Bisadh Kadel</h4>
-				<p class="blog-post-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/><a class="redirect-button" href="#">ReadMore</a></p>
-			</div>
-		</div>
-
+		{% endfor %}
 	</div>
 {% endblock %}

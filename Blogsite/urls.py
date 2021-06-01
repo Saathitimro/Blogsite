@@ -1,12 +1,12 @@
 
 from django.contrib import admin
-from django.urls import path
-from Blogs import views
+from django.urls import path, include
+from froala_editor import views
+
 
 urlpatterns = [
+    path('', include('Blogs.urls')),
     path('admin/', admin.site.urls),
-    path('', views.home),
-    path('home', views.home),
-    path('blog', views.blog),
-    path('details', views.details),
+    path('froala_editor/',include('froala_editor.urls')),
+    
 ]
