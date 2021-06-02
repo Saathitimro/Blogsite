@@ -7,8 +7,8 @@
 		<div class="post">
 			<h2 class="post-title">{{ blogs.title }}</h2>
 			<h5 class="post-author">By, Bisadh kadel</h5>
-			<img src="img/bgimg.jpg" alt="Post" class="post-img">
-			<p class="post-content"> {{ blogs.content }}
+			<img src="{{ blogs.image }}" alt="Post" class="post-img">
+			<p class="post-content"> {{ blogs.content|safe }}
 		</p>
 	{% endfor %}
 		<textarea placeholder="facebook api here"></textarea>

@@ -11,5 +11,5 @@ def blog(request):
     return render(request, "Pages/Blogs.html", context)
 
 def details(request):
-    
-    return render(request,"Pages/blogpost.html")
+    context = {'blogs' : BlogModel.objects.all()}
+    return render(request,"Pages/blogpost.html", context)
