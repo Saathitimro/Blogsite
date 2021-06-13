@@ -10,6 +10,6 @@ def blog(request):
     context = {'blogs' : BlogModel.objects.all()}
     return render(request, "Pages/Blogs.html", context)
 
-def details(request):
-    context = {'blogs' : BlogModel.objects.all()}
+def details(request,pk):
+    context = {'blogs' : BlogModel.objects.get(id=pk)}
     return render(request,"Pages/blogpost.html", context)
