@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+		<!-- icons -->
+	<script src="https://kit.fontawesome.com/7f9e9439f9.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+			<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+		    <!--THIS IS THE NAVBAR-->
+
+        <header>
+            <div class="container">
+                <div class="d-flex space-between align-items-center">
+                    <div class="social-links">
+                        <ul class="d-flex" id="socials">
+                            <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram fa-lg"></i> </a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-container">
+                        <a class="logo" href="#">Saathi<span>Timro</span></a>
+                    </div>
+                    <div class="info">
+                        <ul class="d-flex" id="contacts">
+                            <li>
+                            	<a href="#"><i class="fas fa-phone-alt"></i> 9860477627</a>
+                            </li>
+                            <li>
+                            	<a  href="#"><i class="fa fa-envelope"></i> blabla@gmail.com</a>
+                        	</li>
+                        </ul>
+                    </div>
+                </div>
+                <nav>
+                	<button onclick="showOption()" class="displayOption"> <i class="fas fa-align-justify fa-2x"></i> </button>
+                    <ul class="d-flex justify-content-center" id="option">
+                        <li id="list-item"><a href="newIndex.html">Home</a></li>
+                        <li id="list-item"><a href="allblogs.html">Blogs</a></li>
+                        <li id="list-item"><a href="#">Contact Us</a></li>
+                        <li id="list-item"><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+	<div class="profile-container">
+		<div class="profile-nav">
+			<h1 class="profile-nav-title">SaathiTimro</h1>
+			<ul class="profile-nav-items">
+				<li style="font-weight: bold; letter-spacing: 2px;"><a href="profile.html">Profile</a></li>
+				<li><a href="schedule.html">Public Sessions</a></li>
+				<li><a href="client.html">Clients</a></li>
+				<li><a href="pending.html">Pending</a></li>
+			</ul>
+		</div>
+		<div class="profile-content">
+			<div class="profile">
+				<h2 class="profile-name"> Bisadh Kadel </h2>
+				<div class="profile-table">
+					<div class="row">
+						<div class="th">Location</div><div class="td">Basantapur</div>
+					</div>
+					<div class="row">
+						<div class="th">Contact</div><div class="td">98********</div>
+					</div>
+					<div class="row">
+						<div class="th">Email</div><div class="td">random-email@email.com</div>
+					</div>
+					<div class="row">
+						<div class="th">Available</div><div class="td">12pm to 8pm</div>
+					</div>
+					<div class="row">
+						<div class="th">Joined</div><div class="td">November 12 2021</div>
+					</div>					
+				</div>
+			</div>
+			<div class="c-available">
+				<h2 style="margin-bottom: 20px;">Counselor Availability</h2>
+				<form>
+				<label>From :</label>
+				<input type="text" name="from" required>
+				<label>To :</label>
+				<input type="text" name="from" required>
+				<button type="submit">UPDATE</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- javascripts -->
+    <script type="text/javascript" src="js/blog.js">
+    </script>
+    <script type="text/javascript" src="js/slider.js"></script>
+</body>
+</html>

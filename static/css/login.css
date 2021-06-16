@@ -1,0 +1,66 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.login-bg{
+	background-color: #dddd;
+	height: 65vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.login-container{
+    height: 300px;
+    width: 420px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 2px 2px 2px 2px #aaaa;
+}
+.login-container .login-header{
+	margin: 18px 0 18px 5px;
+	text-align: center;
+}
+.login-container form{
+	padding : 0px 5px 0px 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+.login-container form label{
+	text-align: left;
+	margin-bottom: 10px; 
+	font-size: 14px;
+}
+.login-container form input[type="text"], input[type="password"]{
+	margin-bottom: 10px;
+	height: 28px;
+	width: 250px;
+	padding-left: 10px;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+.login-container form input[type="submit"]{
+	margin-top: 15px; 
+	margin-bottom: 20px;
+	font-size: 17px;
+	height: 38px;
+	width: 75px;
+	background-color: green;
+	font-weight: bold;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid green; 
+	letter-spacing: 1px;
+	font-family: 'Montserrat', sans-serif;
+	transition: 0.3s ease-in-out;
+}
+.login-container form input[type="submit"]:hover{
+	cursor: pointer;
+	background-color: white;
+	color: green;
+	width: 250px;
+}
