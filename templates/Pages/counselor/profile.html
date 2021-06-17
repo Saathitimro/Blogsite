@@ -1,57 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Profile</title>
-	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="css/profile.css">
-	<link rel="stylesheet" type="text/css" href="css/blog.css">
-		<!-- icons -->
-	<script src="https://kit.fontawesome.com/7f9e9439f9.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-			<!-- fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-</head>
-<body>
-		    <!--THIS IS THE NAVBAR-->
+{% extends 'base.html' %}
+{% load static %}
 
-        <header>
-            <div class="container">
-                <div class="d-flex space-between align-items-center">
-                    <div class="social-links">
-                        <ul class="d-flex" id="socials">
-                            <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram fa-lg"></i> </a></li>
-                        </ul>
-                    </div>
-                    <div class="logo-container">
-                        <a class="logo" href="#">Saathi<span>Timro</span></a>
-                    </div>
-                    <div class="info">
-                        <ul class="d-flex" id="contacts">
-                            <li>
-                            	<a href="#"><i class="fas fa-phone-alt"></i> 9860477627</a>
-                            </li>
-                            <li>
-                            	<a  href="#"><i class="fa fa-envelope"></i> blabla@gmail.com</a>
-                        	</li>
-                        </ul>
-                    </div>
-                </div>
-                <nav>
-                	<button onclick="showOption()" class="displayOption"> <i class="fas fa-align-justify fa-2x"></i> </button>
-                    <ul class="d-flex justify-content-center" id="option">
-                        <li id="list-item"><a href="newIndex.html">Home</a></li>
-                        <li id="list-item"><a href="allblogs.html">Blogs</a></li>
-                        <li id="list-item"><a href="#">Contact Us</a></li>
-                        <li id="list-item"><a href="#">Login</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+{% block 'content' %}
 
 
 	<div class="profile-container">
@@ -59,9 +9,9 @@
 			<h1 class="profile-nav-title">SaathiTimro</h1>
 			<ul class="profile-nav-items">
 				<li style="font-weight: bold; letter-spacing: 2px;"><a href="profile.html">Profile</a></li>
-				<li><a href="schedule.html">Public Sessions</a></li>
-				<li><a href="client.html">Clients</a></li>
-				<li><a href="pending.html">Pending</a></li>
+				<li><a href="schedule">Public Sessions</a></li>
+				<li><a href="client">Clients</a></li>
+				<li><a href="pending">Pending</a></li>
 			</ul>
 		</div>
 		<div class="profile-content">
@@ -97,10 +47,4 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- javascripts -->
-    <script type="text/javascript" src="js/blog.js">
-    </script>
-    <script type="text/javascript" src="js/slider.js"></script>
-</body>
-</html>
+{% endblock %}
