@@ -11,5 +11,5 @@ urlpatterns = [
     path('schedule', views.schedule),
     path('pending', views.pending),
     path('detail', views.detail),
-    path('<pk>/details/', views.details),
+    path('blog_detail/<int>', views.blog_detail),
 ]
