@@ -1,0 +1,63 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.join-reg-container{
+	height: 600px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #F9F9F9;
+
+}
+.join-reg{
+	height: 400px;
+	min-width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.join-reg form{
+	padding: 15px 20px 15px 20px;
+	height: 100%;
+	width: 80%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.join-reg form h2{
+	margin-bottom: 20px;
+}
+.join-reg form label{
+	text-align: left;
+}
+.join-reg form input[type="text"], select, input[type="email"]{
+	height: 30px;
+	min-width: 250px;
+	margin: 10px 0 5px 0;
+}
+.join-reg form input[type="submit"]{
+	margin-top: 20px;
+	height: 40px;
+	width: 100px;
+	border: solid 2px white;
+	border-radius: 5px;
+	background-color: green;
+	color: white;
+	transition: 0.3s ease-in-out;
+	font-family: 'montserrat', sans-serif;
+}
+.join-reg form input[type="submit"]:hover{
+	background-color: white;
+	color: green;
+	width: 250px;
+	border: solid 2px green;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
