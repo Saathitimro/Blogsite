@@ -13,9 +13,14 @@ def blog(request):
     context = {'blogs' : BlogModel.objects.all()}
     return render(request, "Pages/Blogs.html", context)
 
-def blog_detail(request,pk):
-    context = {'blogs' : BlogModel.objects.get(id=pk)}
-    return render(request,"Pages/blogpost.html", context)
+def blog_details(request, slug):
+    context = {}
+    try:
+        blogs = BlogModel.objects.filter(slug = slug).first()
+        context['blogs'] = blogs
+    except Exception as e:
+        print(e)
+    return render(request,"Pages/blogdetail.html")
 
 def profile(request):
     return render(request, "Pages/counselor/profile.html")

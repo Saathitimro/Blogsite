@@ -1,18 +1,17 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block 'content' %}
+
 	<div class="post-container">
 	{% for blogs in blogs %}
 		<div class="post">
 			<h2 class="post-title">{{ blogs.title }}</h2>
 			<h5 class="post-author">By, Bisadh kadel</h5>
 			<img src="{{ blogs.image }}" alt="Post" class="post-img">
-			<p class="post-content"> {{ blogs.content|safe }}
-		</p>
+			<p class="post-content"> {{ blogs.content|safe }}</p>
+		</div>
 	{% endfor %}
 		<textarea placeholder="facebook api here"></textarea>
-		
-		</div>
 	</div>
+
 {% endblock %}
