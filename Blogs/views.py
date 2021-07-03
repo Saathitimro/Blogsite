@@ -1,5 +1,5 @@
 from Blogs.models import BlogModel
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 
 def home(request):
@@ -14,13 +14,8 @@ def blog(request):
     return render(request, "Pages/Blogs.html", context)
 
 def blog_details(request, slug):
-    context = {}
-    try:
-        blogs = BlogModel.objects.filter(slug = slug).first()
-        context['blogs'] = blogs
-    except Exception as e:
-        print(e)
-    return render(request,"Pages/blogdetail.html")
+    context = {'blogs' : BlogModel.objects.filter(slug = slug)}
+    return render(request,"Pages/blogdetail.html", context)
 
 def profile(request):
     return render(request, "Pages/counselor/profile.html")

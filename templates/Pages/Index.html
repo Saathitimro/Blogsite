@@ -47,7 +47,7 @@
                             <h5 class="blog-author">By, Bisadh kadel</h5>
                             <img src="{{ blogs.image }}" alt="hello" class="body-img">
                             <p class="blog-content"> {{ blogs.summery}}
-                                <br/> <a href="{% url 'blog_details' blogs.slug %}" class="redirect-button">Read more</a> </p>
+                                <br/> <a href="blog_details/{{blogs.slug}}" class="redirect-button">Read more</a> </p>
                         </div>  
                 </div>
             {% endfor %}
